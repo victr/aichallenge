@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar.bg-light {
+  background-color: #64b5f6 !important;
+}
+
+.navbar .nav-item:hover,
+.navbar .nav-item:focus,
+.navbar .nav-item.active {
+  background-color: #42a5f5  !important;
+  transition: background-color 0.15s ease-in-out;
+}
+
+/* Change placeholder color to #eeeeee for inputs and textareas */
+::placeholder {
+  color: #e0e0e0;
+  opacity: 1; /* ensure full visibility */
+}
+
+input::placeholder,
+textarea::placeholder,
+.form-control::placeholder {
+  color: #e0e0e0;
+  opacity: 1;
+}
+
+.text-muted {
+  color: #e0e0e0 !important;
+}
