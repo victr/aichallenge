@@ -15,6 +15,11 @@ function Sidebar() {
               Day 2
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/day3" className={({ isActive }) => isActive ? 'active' : ''}>
+              Day 3
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </aside>

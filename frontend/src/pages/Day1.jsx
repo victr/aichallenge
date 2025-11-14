@@ -105,7 +105,7 @@ export default function Day1() {
         </div>
       </div>
 
-      <div className="col-md-4">
+      <div className="col-md-4 mt-4 mt-md-0">
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">Info</h5>

@@ -7,7 +7,7 @@ export default function Hello() {
       <div className="col-md-8">
         <h2>Hello there 👋</h2>
         <p>Welcome to Vik's AI Challenge.</p>
-        <Link to="/day1" className="btn btn-primary">Go to Day1</Link>
+        <Link to="/day2" className="btn btn-primary">Go to Day 2</Link>
       </div>
     </div>    
   );
