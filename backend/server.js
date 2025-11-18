@@ -56,8 +56,8 @@ async function handle(req, res, payload) {
 app.post('/api/talktome', async (req, res) => {
   let payload = {
       model: OPENAI_MODEL,
-      max_output_tokens: 1000,
-      temperature: 0.7
+      max_output_tokens: req.body.max_output_tokens || 1000,
+      temperature: req.body.temperature || 0.7
   };
   payload.input = req.body.prompt ? req.body.prompt : req.body.input;
   if (req.body.format) payload.text = {format: req.body.format};

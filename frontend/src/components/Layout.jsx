@@ -17,6 +17,7 @@ function Layout({ children }) {
               <li className="nav-item p-1"><Link to="/day1" className="nav-link">Day1</Link></li>
               <li className="nav-item p-1"><Link to="/day2" className="nav-link">Day2</Link></li>
               <li className="nav-item p-1"><Link to="/day3" className="nav-link">Day3</Link></li>
+              <li className="nav-item p-1"><Link to="/day4" className="nav-link">Day4</Link></li>
             </ul>
           </div>
         </div>
