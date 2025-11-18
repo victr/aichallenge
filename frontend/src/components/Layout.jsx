@@ -1,5 +1,3 @@
-import Header from './Header';
-import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
 
 function Layout({ children }) {
@@ -14,10 +12,18 @@ function Layout({ children }) {
 
           <div className="collapse navbar-collapse" id="navbarsMain">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item p-1"><Link to="/day1" className="nav-link">Day1</Link></li>
-              <li className="nav-item p-1"><Link to="/day2" className="nav-link">Day2</Link></li>
-              <li className="nav-item p-1"><Link to="/day3" className="nav-link">Day3</Link></li>
+              <li className="nav-item p-1"><Link to="/day5" className="nav-link">Day5</Link></li>
               <li className="nav-item p-1"><Link to="/day4" className="nav-link">Day4</Link></li>
+              <li className="nav-item dropdown p-1">
+                <a className="nav-link dropdown-toggle" href="#" id="otherDaysDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Other days
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="otherDaysDropdown">
+                  <li><Link to="/day3" className="dropdown-item">Day3</Link></li>
+                  <li><Link to="/day2" className="dropdown-item">Day2</Link></li>
+                  <li><Link to="/day1" className="dropdown-item">Day1</Link></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
